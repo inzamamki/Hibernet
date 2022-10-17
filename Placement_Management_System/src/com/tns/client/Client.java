@@ -1,16 +1,14 @@
 package com.tns.client;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-
 import com.tns.entities.*;
 import com.tns.services.*;
 
+@SuppressWarnings("unused")
 public class Client
 {
 
@@ -48,19 +46,20 @@ public class Client
 		//college, student, certificate association
 		
 /*		//college reocord create
+		
 		college.setCollegeAdmin("Pranav");
-		college.setId(1);
 		college.setCollegeName("APCOER");
 		college.setLocation("Pune");
 		Cservice.addCollege(college);
 		
 		///certificate record create 
-		certificate.setId(2);
 		certificate.setYear(2022);
 		certificate.setCollege(college);
 		Crserivece.addCertificate(certificate);
+		
+		
 		///Student record create 
-		student.setId(2);
+		 * 
 		student.setName("Inzamam");
 		student.setRoll(4);
 		student.setCollege(college);
@@ -77,6 +76,7 @@ public class Client
 		List<Certificate> list1=new ArrayList<Certificate>();
 		list1.add(certificate);
 		college.setCertificate(list1);
+		
 		//student.setCollege(college);
 		student.setCertificate(certificate);
 		
@@ -115,7 +115,6 @@ public class Client
 		
 		// Creating Placement record
 		
-		placement.setP_id(82);
 		placement.setS_name("Abhineel");
 		placement.setCollege(college);
 		placement.setDate("5/02/2023"); 
@@ -124,7 +123,6 @@ public class Client
 		
 		Pservice.addPlacement(placement);
 		
-		placement1.setP_id(2);
 		placement1.setS_name("Anil");
 		placement1.setCollege(college);
 		placement1.setDate("18/01/2023");
@@ -142,12 +140,11 @@ public class Client
 		*/ 
 		
 		// Create	// admin and user association
-	/*	admin.setId(8);
+	/*	
 		admin.setName("Inzamam");
 		admin.setPassword("1234");
 		admin.setUser(user);
 		
-		user.setId(13);
 		user.setName("Inzamam");
 		user.setType("user");
 		user.setPassword("1234");
